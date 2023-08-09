@@ -1,0 +1,56 @@
+:root{
+    --login--primary-color:#3a68b7;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--login--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario{
+    width: 80%;
+    max-width: 32em;
+    background-color: white;
+}
+
+.form_field{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    padding: 2rem;
+}
+
+.form_titulo{
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--login--primary-color);
+    padding-top: 2rem;
+}
+
+.form_label{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.form_input{
+    padding: 0.5em 0;
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--login--primary-color);
+    margin-bottom: 0.8rem;
+    outline: none;
+}
+
+.form_input:focus{
+    outline: 2px solid var(--login--primary-color);
+    padding-left: 0.3rem;
+    transition: padding-left 0.05s;
+}
